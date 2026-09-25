@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { min-height: 100%; }
+body { @apply bg-canvas text-ink; -webkit-tap-highlight-color: transparent; }
+
+@layer components {
+  .card { @apply border border-line bg-surface shadow-sm; }
+  .pill-input { @apply flex h-14 items-center gap-4 rounded-full border border-line bg-surface px-5 text-primary; }
+  .pill-input:focus-within { @apply border-primary ring-2 ring-primary/30; }
+}
